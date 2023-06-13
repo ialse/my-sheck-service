@@ -26,7 +26,7 @@ export default function Header() {
 
     return parsedJSON.map((check: Record<string, any>) => {
       const receipt = check.ticket.document.receipt;
-      const items = check.ticket.document.receipt.items.map((item) => ({
+      const items = check.ticket.document.receipt.items.map((item: any) => ({
         name: item.name,
         price: item.price,
         quantity: item.quantity,
