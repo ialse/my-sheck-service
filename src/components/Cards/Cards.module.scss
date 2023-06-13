@@ -1,0 +1,28 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 48px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .items {
+    background-color: aliceblue;
+    border-radius: 12px;
+  }
+
+  .item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding: 6px 24px;
+    border-bottom: 1px solid lightgray;
+
+    &:last-child {
+      border-bottom: 0px;
+    }
+  }
+}
